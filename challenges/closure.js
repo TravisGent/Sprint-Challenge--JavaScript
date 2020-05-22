@@ -18,7 +18,23 @@ myFunction();
 
 // Explanation: 
 
+// everything inside of the parent function is in the scope of each other. The nested function has access to all of the variables
+// inside of its parent and also the variables that the parent has access too.
 
 /* Task 2: Counter */
 
-/* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+/* Create a function called `sumation` that accepts a parameter and uses a counter to return the 
+summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function sumation(number) {
+  let numSumation = [];
+  for(i = number; i > 0; i--) {
+    numSumation.push(i);
+  }
+
+  return numSumation.reduce(function(a, b) {
+    return a + b;
+  }, 0);
+}
+
+console.log(sumation(4));
