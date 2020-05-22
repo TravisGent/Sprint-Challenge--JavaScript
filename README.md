@@ -26,13 +26,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.map is faster than .forEach. .forEach doesn't create a new array but rather tampers with the existing array. .map creates an entirely new array from the one we give it. 
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function takes as it's parameter a function and returns another function. A callback function if a function that is used in another function as a parameter but then is invoked inside of the outer function to do something.
 
 3. What is closure?
 
+It is how inner functions has access of the scope for its parent functions. It then can "save" that information from it's parent function.
+
 4. Describe the four rules of the 'this' keyword.
 
+1) Windows/Global Object Binding: Which means that this outside of any function would refer to the globabl scope.
+2) Implicit Binding: Which means that the "this" would refer to it's object. Whatever is before the "dot"
+3) New Binding: Which means "this" refers to the specific instance of an object that is created and returned by a the constructor in its function.
+4) Explicit Binding: "This" when call or apply methods are used.
+
 5. Why do we need super() in an extended class?
+
+super() give the extended class access to all of the variables and methods of the parent class.
 
 ### Task 1 - Project Set up
 
